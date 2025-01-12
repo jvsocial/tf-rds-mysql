@@ -21,7 +21,7 @@
         <h1>Welcome to the Slide Decks</h1>
         <p>Click on a slide to begin the presentation.</p>
 
-        <!-- List slides dynamically from the docs folder -->
+        <!-- List all Markdown files in the docs folder as links -->
         <ul>
           {% assign slides = site.pages | where: "path", "/docs/" %} {% for
           slide in slides %}
