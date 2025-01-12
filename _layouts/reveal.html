@@ -17,6 +17,7 @@
     <div class="reveal">
       <div class="slides">{{ content | markdownify }}</div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
     <script>
       Reveal.initialize({
@@ -25,7 +26,7 @@
         slideNumber: true,
         history: true,
         transition: "fade",
-        plugins: [RevealHighlight],
+        plugins: [RevealHighlight], // If code highlighting is enabled
       });
     </script>
   </body>
