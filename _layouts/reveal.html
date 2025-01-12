@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <!-- Reveal.js Core CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"
     />
-    <!-- Reveal.js Theme -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css"
+      href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css"
     />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">{{ content | markdownify }}</div>
     </div>
-    <!-- Reveal.js Core JS -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
     <script>
       Reveal.initialize({
@@ -27,7 +24,8 @@
         progress: true,
         slideNumber: true,
         history: true,
-        transition: "fade", // Choose: none, fade, slide, convex, concave, zoom
+        transition: "fade",
+        plugins: [RevealHighlight],
       });
     </script>
   </body>
