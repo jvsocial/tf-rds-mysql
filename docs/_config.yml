@@ -8,11 +8,6 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-# Enable collections for slides
-collections:
-  slides:
-    output: true # Ensure slides are processed as HTML
-
 # Site title
 title: "Reveal.js Slide Decks"
 
