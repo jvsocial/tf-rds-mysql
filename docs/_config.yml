@@ -12,7 +12,7 @@ kramdown:
 title: "Reveal.js Slide Decks"
 
 # Make sure baseurl is set correctly depending on where the site is hosted
-baseurl: "" # Adjust if using a subfolder for deployment
+baseurl: "tf-rds-mysql/docs/" # Adjust if using a subfolder for deployment
 
 # Default source folder (typically, you won't need to set this)
 source: ["/docs"] # If your docs folder is elsewhere, adjust accordingly
