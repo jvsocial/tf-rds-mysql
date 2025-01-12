@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
+    <!-- Reveal.js core styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"
     />
+    <!-- Reveal.js theme styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css"
@@ -18,6 +20,7 @@
       <div class="slides">{{ content | markdownify }}</div>
     </div>
 
+    <!-- Reveal.js core JS -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
     <script>
       Reveal.initialize({
@@ -26,7 +29,7 @@
         slideNumber: true,
         history: true,
         transition: "fade",
-        plugins: [RevealHighlight], // If code highlighting is enabled
+        plugins: [RevealHighlight], // Optional code highlighting plugin
       });
     </script>
   </body>
